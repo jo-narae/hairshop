@@ -24,7 +24,7 @@ public class Menu {
     @Column
     private int price;
 
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     @JoinColumn(name = "shop_id", nullable = false)
     private Shop shop;
 }

@@ -36,6 +36,6 @@ public class Shop {
     @Column
     private String img;
 
-    @OneToMany(mappedBy = "shop")
+    @OneToMany(mappedBy = "shop", cascade = CascadeType.REMOVE)
     private List<Menu> menus;
 }
